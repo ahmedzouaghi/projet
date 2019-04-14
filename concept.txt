@@ -1,0 +1,14 @@
+udp server/client
+
+server:
+>create a socket with the socket()
+>bind the socket to an address using the bind()
+>send and recive data,using the recvfrom and sendto() system calls
+
+client:
+>create a socket with socket()
+>send and recive data,using the recvfrom and sendto() system calls
+
+auction rules:
+The bidders then call out their bids, with each bid being higher than the subsequent bid.
+the auction ends when there are no more bids, and the buyer making the highest bid gets the item.
