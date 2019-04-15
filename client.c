@@ -6,7 +6,7 @@
 #include<netinet/in.h>
 #include<stdlib.h>
 
-void error(char *);
+
 
 int main(int argc, char *argv[])
 {
@@ -22,10 +22,6 @@ int main(int argc, char *argv[])
 	}
 	sock=socket(AF_INET, SOCK_DGRAM, 0);
 	
-	if (sock<0)
-	{
-		error("socket");
-	}
 	
 	server.sin_family = AF_INET;
     hp =gethostbyname(argv[1]);
@@ -59,9 +55,5 @@ int main(int argc, char *argv[])
  write(1,"got a reply: ",12);
  printf("current bid is %s \n",buffer);
 }
-void error(char *msg)
-{
-	perror(msg);
-	exit(0);
-}
+
 }
