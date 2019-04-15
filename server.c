@@ -9,11 +9,7 @@ int sock, length, fromlen ,n,bet,bid;
 struct sockaddr_in server;
 struct sockaddr_in from;
 char buf [1024];
-void error(char *msg)
-{
-	perror(msg);
-	exit(0);
-}
+
 void* serv_h(void* arg)
 {
 	bid=0;
