@@ -1,3 +1,0 @@
-gcc my_source.c -o my_app -pthread
--pthread
-./my_app
